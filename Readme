@@ -1,0 +1,16 @@
+Prerequisites
+
+    Java 1.8 SDK (Oracle, latest update)
+    Maven 3.6
+    Docker CE 18+ including the latest docker-compose
+
+Building
+
+The application must be built prior to attempting to build or rebuilding its docker image.
+
+$ mvn -Dmaven.test.skip=true package
+
+Starting the containers
+
+$ docker-compose up --build
+
